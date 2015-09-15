@@ -36,7 +36,7 @@ public class ComplaintItemMasterEntity implements Serializable{
 	private int deptId;
 	@Column(name = "complainttypeid")
 	private int complaintTypeId;
-	
+		
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "deptid", referencedColumnName = "deptid", insertable = false, updatable = false, nullable = false)
 	private ComplaintDepartment ComplaintDepartment;
